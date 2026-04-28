@@ -1,3 +1,11 @@
+rd /s /q node_modules
+del package-lock.json
+
+npm cache clean --force
+
+npm install
+
+npm install react-router-dom
 import React from 'react';
 import {Link} from 'react-router-dom';
 function Navbar(){
